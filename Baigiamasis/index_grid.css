@@ -1,0 +1,178 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: black;
+    font-style:oblique;
+    height: 100%;
+}
+
+.name_logo{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.logo{
+    width: 150px;
+    height: 100px;
+}
+
+nav{
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+li{
+    border-top: 1px solid rgb(0, 167, 233);
+    border-bottom:1px solid rgb(0, 167, 233);
+    box-shadow: 0 0 100px rgb(0, 167, 233);
+    text-align: center;
+    line-height: 1.2rem;
+}
+
+.name{
+    line-height: 3rem;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 92px rgb(0, 167, 233),
+    0 0 102px rgb(0, 167, 233),
+    0 0 151px rgb(0, 167, 233);
+}
+
+.about_me_text{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+header,main, .main_section{
+    margin-top: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+span{
+    color: rgb(0, 167, 233);;
+}
+
+.partners{
+    width: 120px;
+    height: auto;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-family: initial;
+}
+
+.partner_name{
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+@media screen and (min-width:1600px){
+    
+    .name_logo{
+        margin-left: 3rem;
+    }
+
+    .logo{
+        width: 200px;
+        height: 90px;
+    }
+
+    .name{
+        padding-left: 30rem;
+        line-height: 10rem;
+        line-height: 2rem;
+    }
+
+    header{
+        flex-direction:row;
+        justify-content: space-between;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav{
+        width: auto;
+        margin-right: 3rem;
+    }
+
+    li{
+        border: none;
+        box-shadow: none;
+        padding-left: 3rem;
+    }
+
+    main{
+        display: grid;
+        row-gap: 5rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+    .hidden{
+        display: block;
+    }
+
+    .partners{
+        width: 200px;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .about_me_h1, .partner_name{
+        padding-left: 11rem;
+    }
+    
+    .sponsor_icon{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        grid-row: 2;
+        grid-column: 1/3;
+    }
+
+    main div div div p {
+        text-align: center;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .hidden_from_desktop{
+        display: none;
+    }
+
+    .main_section{
+        width: 90rem;
+        grid-column: 1/2;
+    }
+
+    aside{
+        grid-column: 2;
+        grid-row: 1;
+        margin-top: 6rem;
+    }
+}
